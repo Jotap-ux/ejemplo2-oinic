@@ -9,6 +9,9 @@ import { NavController } from '@ionic/angular';
 })
 export class HomePage {
 
+
+  valor:String="Hola mundo";
+
   constructor(private router: Router, private navControl: NavController) {}
 
   irPagina2(){

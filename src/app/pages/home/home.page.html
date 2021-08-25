@@ -1,48 +1,48 @@
 <ion-header [translucent]="true">
-  
+  <ion-toolbar>
+    <ion-title>Clase 3</ion-title>
+  </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  
+
+  <ion-button color="warning" routerLink="/pagina1">Pagina 1</ion-button>
+  <ion-button color="secondary" (click)='irPagina2()'>Pagina 2</ion-button>
+  <ion-button color="tertiary" (click)='irPagina3()'>Pagina 3</ion-button>
   <!--Los botones van aqui-->
+  <!-- estos botones van afuera-->
+
   <!-- <ion-button color="success">Success</ion-button>
   <ion-button color="warning">Warning</ion-button>
   <ion-button color="danger">Danger</ion-button>
   <ion-button color="light">Light</ion-button>
   <ion-button color="medium">Medium</ion-button>
   <ion-button color="dark">Dark</ion-button> -->
+  
+  <div class="titulo">
+    Formulario ingreso de Datos
+  </div>
 
-  <ion-card>
-  <ion-card-header>
-    <!-- estos botones van afuera-->
-    <ion-button color="warning" routerLink="/pagina1">Pagina 1</ion-button>
-    <ion-button color="secondary" (click)='irPagina2()'>Pagina 2</ion-button>
-    <ion-button color="tertiary" (click)='irPagina3()'>Pagina 3</ion-button>
+  <div class="contenido">
 
-  </ion-card-header>
-
-  </ion-card>
-
-  <ion-card>
-  <ion-card-header>
-    <ion-card-subtitle>nasheee</ion-card-subtitle>
-    <ion-card-title>PAGINA DE INICIO</ion-card-title>
-  </ion-card-header>
-
-  </ion-card>
-
-  <ion-card>
     <ion-item>
-
-      <ion-label>Titulo pagina de inicio</ion-label>
-      <ion-button fill="outline" slot="end">View</ion-button>
+      <ion-label position="floating">Nombre Completo</ion-label>
+      <ion-textarea></ion-textarea>
     </ion-item>
 
-    <ion-card-content>
-      Aqui probando los componentes de ionic, bastante divertido mi pana
-    </ion-card-content>
-  </ion-card>
+    <ion-item>
+      <ion-label position="floating">Rut</ion-label>
+      <ion-textarea></ion-textarea>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Comentario</ion-label>
+      <ion-textarea></ion-textarea>
+    </ion-item>
+
+    <ion-label>{{valor}}</ion-label>
+
+  </div>
+  
 
 </ion-content>
-
-
