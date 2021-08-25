@@ -1,19 +1,48 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
+  
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-button color="primary" routerLink="/pagina1">Pagina 1</ion-button>
-  <ion-button color="secondary" (click)='irPagina2()'>Pagina 2</ion-button>
-  <ion-button color="tertiary" (click)='irPagina3()'>Pagina 3</ion-button>
-  <ion-button color="success">Success</ion-button>
+  
+  <!--Los botones van aqui-->
+  <!-- <ion-button color="success">Success</ion-button>
   <ion-button color="warning">Warning</ion-button>
   <ion-button color="danger">Danger</ion-button>
   <ion-button color="light">Light</ion-button>
   <ion-button color="medium">Medium</ion-button>
-  <ion-button color="dark">Dark</ion-button>
+  <ion-button color="dark">Dark</ion-button> -->
+
+  <ion-card>
+  <ion-card-header>
+    <!-- estos botones van afuera-->
+    <ion-button color="warning" routerLink="/pagina1">Pagina 1</ion-button>
+    <ion-button color="secondary" (click)='irPagina2()'>Pagina 2</ion-button>
+    <ion-button color="tertiary" (click)='irPagina3()'>Pagina 3</ion-button>
+
+  </ion-card-header>
+
+  </ion-card>
+
+  <ion-card>
+  <ion-card-header>
+    <ion-card-subtitle>nasheee</ion-card-subtitle>
+    <ion-card-title>PAGINA DE INICIO</ion-card-title>
+  </ion-card-header>
+
+  </ion-card>
+
+  <ion-card>
+    <ion-item>
+
+      <ion-label>Titulo pagina de inicio</ion-label>
+      <ion-button fill="outline" slot="end">View</ion-button>
+    </ion-item>
+
+    <ion-card-content>
+      Aqui probando los componentes de ionic, bastante divertido mi pana
+    </ion-card-content>
+  </ion-card>
+
 </ion-content>
+
+
